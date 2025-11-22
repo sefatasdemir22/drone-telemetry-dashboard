@@ -28,6 +28,7 @@ Gerekli kütüphaneleri yükleyin:
     pip install -r requirements.txt
 
 Uygulamayı başlatın:
+    
     python app.py
 
 Tarayıcınızda http://127.0.0.1:5000 adresine gidin.

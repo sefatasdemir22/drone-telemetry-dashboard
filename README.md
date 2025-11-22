@@ -11,6 +11,9 @@ Bu proje, **Python Flask** altyapısı kullanılarak geliştirilmiş modern bir 
   * 🔥 **Isı Haritası (Heatmap):** Tüm sistemin korelasyon matrisini çıkarır.
 * **AI Simülasyonu:** Veriler arasındaki ilişkiyi yorumlayan basit karar algoritması.
 * **Dark Mode UI:** Otonom sistemler konseptine uygun modern, karanlık tema.
+![Proje Arayüzü](screenshot.png)
+
+
 
 ## 🚀 Kurulum ve Çalıştırma
 

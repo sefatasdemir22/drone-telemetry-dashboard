@@ -19,8 +19,9 @@ Bu proje, **Python Flask** altyapısı kullanılarak geliştirilmiş modern bir 
 
 Projeyi bilgisayarınıza klonlayın:
 
-git clone [https://github.com/KULLANICI_ADINIZ/drone-dashboard.git](https://github.com/KULLANICI_ADINIZ/drone-dashboard.git)
-cd drone-dashboard
+    git clone https://github.com/KULLANICI_ADINIZ/drone-dashboard.git
+
+    cd drone-dashboard
 
 Gerekli kütüphaneleri yükleyin:
 

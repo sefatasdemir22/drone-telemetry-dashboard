@@ -18,7 +18,7 @@ Bu proje, **Python Flask** altyapısı kullanılarak geliştirilmiş modern bir 
 ## 🚀 Kurulum ve Çalıştırma
 
 Projeyi bilgisayarınıza klonlayın:
-```bash
+
 git clone [https://github.com/KULLANICI_ADINIZ/drone-dashboard.git](https://github.com/KULLANICI_ADINIZ/drone-dashboard.git)
 cd drone-dashboard
 
@@ -31,13 +31,14 @@ Uygulamayı başlatın:
 
 Tarayıcınızda http://127.0.0.1:5000 adresine gidin.
 
-📂 Proje Yapısı
-app.py: Backend motoru (Flask & Seaborn Entegrasyonu).
+## 📂 Proje Mimarisi
+```text
+drone-dashboard/
+├── app.py              # Backend Motoru (Flask & Seaborn)
+├── requirements.txt    # Kütüphane Listesi
+├── drone_logs.csv      # Simülasyon Verisi
+├── static/             # CSS ve Resimler
+└── templates/
+    └── index.html      # Frontend Arayüzü (Jinja2)
 
-templates/: HTML/CSS arayüz dosyaları.
-
-drone_logs.csv: Simüle edilmiş uçuş verisi.
-
-Geliştirici: Sefa Taşdemir
-
-
+Geliştirici: Sefa Taşdemir | 2025

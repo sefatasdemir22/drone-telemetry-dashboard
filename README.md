@@ -43,8 +43,6 @@ drone-dashboard/
 └── templates/
     └── index.html      # Frontend Arayüzü (Jinja2)
 
-
-
-
+```
 
 Geliştirici: Sefa Taşdemir | 2025

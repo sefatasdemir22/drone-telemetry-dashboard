@@ -1,17 +1,20 @@
-# 🚁 Drone Telemetry & Analysis Dashboard
+# Drone Telemetry & Analysis Dashboard
 
-A lightweight ground-station-style dashboard built with **Python** and **Flask** for exploring drone flight logs, visualizing telemetry, and inspecting relationships between flight parameters.
+A lightweight ground-station-style web dashboard for exploring drone flight logs, visualizing telemetry, and inspecting relationships between flight parameters.
 
-![Python](https://img.shields.io/badge/Python-3.x-blue) ![Flask](https://img.shields.io/badge/Framework-Flask-green) ![Status](https://img.shields.io/badge/Status-Completed-success)
+## Overview
+
+The project combines a small Flask backend with a browser-based interface for analyzing CSV telemetry data. It is intended as a compact software/data-visualization project in an autonomous-systems context.
 
 ## Features
 
-- Interactive visualization of flight parameters such as speed, altitude, and battery level
-- Scatter-plot analysis for comparing two variables
-- Correlation heatmap for telemetry inspection
-- Basic rule-based interpretation of selected data relationships
-- Dark-themed web interface
-- CSV-based telemetry workflow using Pandas
+- visualize telemetry such as speed, altitude, and battery level
+- compare two variables with scatter plots
+- inspect correlations between telemetry fields
+- generate a correlation heatmap
+- display lightweight rule-based interpretations of selected relationships
+- work with CSV flight logs through Pandas
+- dark-themed web interface
 
 ![Project Interface](screenshot.png)
 
@@ -24,7 +27,23 @@ A lightweight ground-station-style dashboard built with **Python** and **Flask**
 - HTML / CSS
 - Jinja2
 
-## Installation
+## Application Flow
+
+```text
+CSV flight log
+    ↓
+Pandas processing
+    ↓
+Flask backend
+    ↓
+Charts and statistics
+    ↓
+Browser dashboard
+```
+
+The project focuses on simple, inspectable telemetry analysis rather than real-time vehicle control or live ground-station communication.
+
+## Running Locally
 
 ```bash
 git clone https://github.com/sefatasdemir22/drone-telemetry-dashboard.git
@@ -33,7 +52,11 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open `http://127.0.0.1:5000` in your browser.
+Then open:
+
+```text
+http://127.0.0.1:5000
+```
 
 ## Project Structure
 
@@ -43,14 +66,11 @@ drone-telemetry-dashboard/
 ├── requirements.txt
 ├── drone_logs.csv
 ├── static/
-└── templates/
-    └── index.html
+├── templates/
+│   └── index.html
+└── README.md
 ```
 
 ## Purpose
 
-This project was created to practice telemetry analysis, lightweight backend development, and technical data visualization in an autonomous-systems context.
-
-## Author
-
-**Sefa Taşdemir**
+This project demonstrates lightweight backend development, data processing, and technical visualization using telemetry-oriented data. It complements my robotics work by focusing on the software layer used to inspect and communicate system behavior.

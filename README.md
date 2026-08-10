@@ -1,48 +1,56 @@
-# 🚁 Drone Telemetri & Analiz İstasyonu (Flask Dashboard)
+# 🚁 Drone Telemetry & Analysis Dashboard
 
-Bu proje, **Python Flask** altyapısı kullanılarak geliştirilmiş modern bir yer kontrol istasyonu arayüzüdür. Drone uçuş loglarını (CSV) analiz eder, **Seaborn** ile görselleştirir ve **Pandas** ile istatistiksel verileri sunar.
+A lightweight ground-station-style dashboard built with **Python** and **Flask** for exploring drone flight logs, visualizing telemetry, and inspecting relationships between flight parameters.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue) ![Flask](https://img.shields.io/badge/Framework-Flask-green) ![Status](https://img.shields.io/badge/Status-Completed-success)
 
-## 🎯 Proje Özellikleri
-* **Dinamik Görselleştirme:** Seçilen parametrelere (Hız, İrtifa, Batarya vb.) göre anlık grafik çizimi.
-* **İleri Analiz Modları:**
-  * 🔵 **Nokta Analizi (Scatter):** İki değişken arasındaki ilişkiyi detaylı inceler.
-  * 🔥 **Isı Haritası (Heatmap):** Tüm sistemin korelasyon matrisini çıkarır.
-* **AI Simülasyonu:** Veriler arasındaki ilişkiyi yorumlayan basit karar algoritması.
-* **Dark Mode UI:** Otonom sistemler konseptine uygun modern, karanlık tema.
-![Proje Arayüzü](screenshot.png)
+## Features
 
+- Interactive visualization of flight parameters such as speed, altitude, and battery level
+- Scatter-plot analysis for comparing two variables
+- Correlation heatmap for telemetry inspection
+- Basic rule-based interpretation of selected data relationships
+- Dark-themed web interface
+- CSV-based telemetry workflow using Pandas
 
+![Project Interface](screenshot.png)
 
-## 🚀 Kurulum ve Çalıştırma
+## Tech Stack
 
-Projeyi bilgisayarınıza klonlayın:
+- Python
+- Flask
+- Pandas
+- Seaborn
+- HTML / CSS
+- Jinja2
 
-    git clone https://github.com/KULLANICI_ADINIZ/drone-dashboard.git
+## Installation
 
-    cd drone-dashboard
-
-Gerekli kütüphaneleri yükleyin:
-
-    pip install -r requirements.txt
-
-Uygulamayı başlatın:
-    
-    python app.py
-
-Tarayıcınızda http://127.0.0.1:5000 adresine gidin.
-
-## 📂 Proje Mimarisi
-```text
-drone-dashboard/
-├── app.py              # Backend Motoru (Flask & Seaborn)
-├── requirements.txt    # Kütüphane Listesi
-├── drone_logs.csv      # Simülasyon Verisi
-├── static/             # CSS ve Resimler
-└── templates/
-    └── index.html      # Frontend Arayüzü (Jinja2)
-
+```bash
+git clone https://github.com/sefatasdemir22/drone-telemetry-dashboard.git
+cd drone-telemetry-dashboard
+pip install -r requirements.txt
+python app.py
 ```
 
-Geliştirici: Sefa Taşdemir | 2025
+Then open `http://127.0.0.1:5000` in your browser.
+
+## Project Structure
+
+```text
+drone-telemetry-dashboard/
+├── app.py
+├── requirements.txt
+├── drone_logs.csv
+├── static/
+└── templates/
+    └── index.html
+```
+
+## Purpose
+
+This project was created to practice telemetry analysis, lightweight backend development, and technical data visualization in an autonomous-systems context.
+
+## Author
+
+**Sefa Taşdemir**
